@@ -1,0 +1,24 @@
+{
+  "ContentTypes": [
+    "text/plain",
+    "audio/mpeg",
+    "audio/mid",
+    "application/octet-stream",
+    "audio/wav",
+    "audio/mp4",
+    "video/mp4",
+    "text/xml",
+    "image/x-icon",
+    "application/msword",
+    "Application/xml",
+    "application/x-gzip-compressed",
+    "audio/aiff",
+    "audio/x-ms-wma",
+    "image/svg+xml",
+    "application/x-zip-compressed",
+    "video/quicktime",
+    "image/RW2",
+    "application/json",
+    "video/mpeg"
+  ]
+}

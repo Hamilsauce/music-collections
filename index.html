@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <title>new pipe</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/7.3.0/rxjs.umd.min.js" integrity="sha512-y3JTS47nnpKORJX8Jn1Rlm+QgRIIZHtu3hWxal0e81avPrqUH48yk+aCi+gprT0RMAcpYa0WCkapxe+bpBHD6g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <main id="app">
+    <header id="appHeader">
+      <div id="appHeader_title">File Viewer</div>
+    </header>
+    <section id="appBody">
+      <div class="fileView">
+        <header class="fileView_top">
+          <h3>FILE VIEWER</h3>
+        </header>
+        <pre>
+          
+        <ul id="fileView_tree">
+          <li class="treeNode">Folder 1</li>
+          <li class="treeNode">Folder 2</li>
+          <li class="treeNode">Folder 3</li>
+          <li class="treeNode">Folder 4</li>
+          <li class="treeNode">Folder 5</li>
+          <li class="treeNode">Folder 6</li>
+          <li id="" class="node" data-kind="folder-file">
+            <div class="treeNode fs-node--body">
+              <!-- ONLY USE folder-toggle-button for FOLDERS -->
+              <div class="fs-node--controls">
+                <!-- <svg class="folder-toggle-button" x="0px" y="0px" width="48" height="48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 48 48" >
+                  <rect id="folder-plus" fill="white" x="0" y="0" width="48" height="48" />
+                  <path id="folder-minus" fill="black" d="M416,277.333H277.333V416h-42.666V277.333H96v-42.666h138.667V96h42.666v138.667H416V277.333z" />
+                </svg> -->
+              </div>
+              <div class="fs-node--name">Folder Node</div>
+            </div>
+            <ul class="fs-node--nodeList"></ul>
+        
+          </li>
+        </ul>
+        </pre>
+      
+      </div>
+    </section>
+  </main>
+  <!--   - -->
+  <script src="./script.js" type="module"></script>
+  <script src="./data/getRecursive.js" type="module"></script>
+  <!-- <script src="./view-builder.js" type="module"></script> -->
+  <!-- <script src="./node-toggle.js" type="module"></script> -->
+  <!-- FOLDER -->
+  <template id="folder-node-template">
+    <li id="" class="node" data-kind="folder-file">
+      <div class="fs-node--body">
+        <!-- ONLY USE folder-toggle-button for FOLDERS -->
+        <div class="fs-node--controls">
+          <svg class="folder-toggle-button" x="0px" y="0px" width="512px" height="512px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+            <rect id="folder-plus" fill="white" x="96" y="240" width="306" height="48" />
+            <path id="folder-minus" fill="none" d="M416,277.333H277.333V416h-42.666V277.333H96v-42.666h138.667V96h42.666v138.667H416V277.333z" />
+          </svg>
+        </div>
+        <div class="fs-node--name"></div>
+      </div>
+      <ul class="fs-node--nodeList"></ul>
+    </li>
+  </template>
+  <!-- FILE -->
+  <template id="fs-node-template">
+    <li class="fs-node" data-nodeType="">
+      <div class="fs-node--body">
+        <div class="fs-node--name"></div>
+        <div class="fs-node--controls"></div>
+      </div>
+    </li>
+  </template>
+
+
+</body>
+
+</html>
