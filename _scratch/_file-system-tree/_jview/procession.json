@@ -1,0 +1,3217 @@
+[
+  {
+    "Name": "work",
+    "Table": [
+      {
+        "work-title": "Procession (Low Melody)"
+      }
+    ]
+  },
+  {
+    "Name": "identification",
+    "Table": [
+      {
+        "Name": "encoding",
+        "Table": [
+          {
+            "software": "TuxGuitar"
+          }
+        ]
+      },
+      {
+        "Name": "creator",
+        "Table": [
+          {
+            "Element:Text": "Jake Hamilton",
+            "Attribute:type": "composer"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "part-list",
+    "Table": [
+      {
+        "Name": "score-part",
+        "Table": [
+          {
+            "part-name": "main_voice",
+            "score-instrument": [
+              {
+                "instrument-name": "#1",
+                "Attribute:id": "P1-I1"
+              }
+            ],
+            "midi-instrument": [
+              {
+                "midi-channel": "1",
+                "midi-program": "25",
+                "Attribute:id": "P1-I1"
+              }
+            ],
+            "Attribute:id": "P1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "part",
+    "Table": [
+      {
+        "measure": [
+          {
+            "attributes": [
+              {
+                "divisions": "960",
+                "key": [
+                  {
+                    "fifths": "0",
+                    "mode": "major"
+                  }
+                ],
+                "clef": [
+                  {
+                    "sign": "G",
+                    "line": "2"
+                  }
+                ],
+                "time": [
+                  {
+                    "beats": "4",
+                    "beat-type": "4"
+                  }
+                ],
+                "staff-details": [
+                  {
+                    "staff-lines": "6",
+                    "staff-tuning": [
+                      {
+                        "tuning-step": "E",
+                        "tuning-octave": "3",
+                        "Attribute:line": "1"
+                      },
+                      {
+                        "tuning-step": "A",
+                        "tuning-octave": "3",
+                        "Attribute:line": "2"
+                      },
+                      {
+                        "tuning-step": "D",
+                        "tuning-octave": "4",
+                        "Attribute:line": "3"
+                      },
+                      {
+                        "tuning-step": "G",
+                        "tuning-octave": "4",
+                        "Attribute:line": "4"
+                      },
+                      {
+                        "tuning-step": "B",
+                        "tuning-octave": "4",
+                        "Attribute:line": "5"
+                      },
+                      {
+                        "tuning-step": "E",
+                        "tuning-octave": "5",
+                        "Attribute:line": "6"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "direction": [
+              {
+                "sound": [
+                  {
+                    "Attribute:tempo": "100"
+                  }
+                ],
+                "Attribute:placement": "above"
+              }
+            ],
+            "note": [
+              {
+                "pitch": [
+                  {
+                    "step": "B",
+                    "octave": "3"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "5"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "D",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "3",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "4"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "D",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "3",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": [
+                  {
+                    "Attribute:type": "stop"
+                  }
+                ]
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "F",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "3"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "6"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "F",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": [
+                  {
+                    "Attribute:type": "stop"
+                  }
+                ]
+              }
+            ],
+            "Attribute:number": "1"
+          },
+          {
+            "attributes": null,
+            "direction": null,
+            "note": [
+              {
+                "pitch": [
+                  {
+                    "step": "D",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "3",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "G",
+                    "octave": "4",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "1",
+                        "string": "3"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "F",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": [
+                  {
+                    "Attribute:type": "stop"
+                  }
+                ]
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "B",
+                    "octave": "3"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "5"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "F",
+                    "octave": "4",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "4",
+                        "string": "4"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "C",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": [
+                  {
+                    "Attribute:type": "stop"
+                  }
+                ]
+              }
+            ],
+            "Attribute:number": "2"
+          },
+          {
+            "attributes": null,
+            "direction": null,
+            "note": [
+              {
+                "pitch": [
+                  {
+                    "step": "G",
+                    "octave": "4",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "1",
+                        "string": "3"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "tie": null,
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "C",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "tie": [
+                  {
+                    "Attribute:type": "stop"
+                  }
+                ],
+                "chord": ""
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "3"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "6"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "tie": null,
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "tie": null,
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "3"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "6"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "tie": [
+                  {
+                    "Attribute:type": "stop"
+                  }
+                ],
+                "chord": ""
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "F",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "tie": null,
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "3"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "6"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "tie": [
+                  {
+                    "Attribute:type": "stop"
+                  }
+                ],
+                "chord": ""
+              }
+            ],
+            "Attribute:number": "3"
+          },
+          {
+            "attributes": null,
+            "direction": null,
+            "note": [
+              {
+                "pitch": [
+                  {
+                    "step": "B",
+                    "octave": "3"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "5"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "A",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "3"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "F",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": [
+                  {
+                    "Attribute:type": "stop"
+                  }
+                ]
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "F",
+                    "octave": "4",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "4",
+                        "string": "4"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "D",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "3",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "4"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "3"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "6"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "C",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": null
+              }
+            ],
+            "Attribute:number": "4"
+          },
+          {
+            "attributes": null,
+            "direction": null,
+            "note": [
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "4"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "480",
+                "type": "eighth",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "G",
+                    "octave": "4",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "1",
+                        "string": "3"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "480",
+                "type": "eighth",
+                "chord": "",
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "C",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "480",
+                "type": "eighth",
+                "chord": "",
+                "tie": [
+                  {
+                    "Attribute:type": "stop"
+                  }
+                ]
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "480",
+                "type": "eighth",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "F",
+                    "octave": "4",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "4",
+                        "string": "4"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": [
+                  {
+                    "Attribute:type": "stop"
+                  }
+                ]
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "A",
+                    "octave": "3"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "5"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "A",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "3"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "B",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "4"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": null
+              }
+            ],
+            "Attribute:number": "5"
+          },
+          {
+            "attributes": null,
+            "direction": null,
+            "note": [
+              {
+                "pitch": [
+                  {
+                    "step": "G",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "4",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "tie": null,
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "B",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "tie": [
+                  {
+                    "Attribute:type": "stop"
+                  }
+                ],
+                "chord": ""
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "B",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "tie": null,
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "tie": null,
+                "chord": ""
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "D",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "3",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "480",
+                "type": "eighth",
+                "tie": null,
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "F",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "480",
+                "type": "eighth",
+                "tie": null,
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "F",
+                    "octave": "4",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "4",
+                        "string": "4"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "tie": null,
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "F",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "tie": [
+                  {
+                    "Attribute:type": "stop"
+                  }
+                ],
+                "chord": ""
+              }
+            ],
+            "Attribute:number": "6"
+          },
+          {
+            "attributes": null,
+            "direction": null,
+            "note": [
+              {
+                "pitch": [
+                  {
+                    "step": "B",
+                    "octave": "3"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "5"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "D",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "3",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "B",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "7",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "4"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "480",
+                "type": "eighth",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "B",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "7",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "480",
+                "type": "eighth",
+                "chord": "",
+                "tie": [
+                  {
+                    "Attribute:type": "stop"
+                  }
+                ]
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "A",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "5",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "480",
+                "type": "eighth",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "4"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "480",
+                "type": "eighth",
+                "chord": "",
+                "tie": [
+                  {
+                    "Attribute:type": "stop"
+                  }
+                ]
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "B",
+                    "octave": "3"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "5"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "D",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "3",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": [
+                  {
+                    "Attribute:type": "stop"
+                  }
+                ]
+              }
+            ],
+            "Attribute:number": "7"
+          },
+          {
+            "attributes": null,
+            "direction": null,
+            "note": [
+              {
+                "pitch": [
+                  {
+                    "step": "G",
+                    "octave": "4",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "1",
+                        "string": "3"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "1440",
+                "type": "quarter",
+                "dot": "",
+                "tie": null,
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "D",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "3",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "1440",
+                "type": "quarter",
+                "dot": "",
+                "tie": [
+                  {
+                    "Attribute:type": "stop"
+                  }
+                ],
+                "chord": ""
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "C",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "480",
+                "type": "eighth",
+                "dot": null,
+                "tie": null,
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "A",
+                    "octave": "3"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "5"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "480",
+                "type": "eighth",
+                "dot": null,
+                "tie": null,
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "F",
+                    "octave": "4",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "4",
+                        "string": "4"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "480",
+                "type": "eighth",
+                "dot": null,
+                "tie": null,
+                "chord": ""
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "G",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "4",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "480",
+                "type": "eighth",
+                "dot": null,
+                "tie": null,
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "4"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "480",
+                "type": "eighth",
+                "dot": null,
+                "tie": null,
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "G",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "4",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "480",
+                "type": "eighth",
+                "dot": null,
+                "tie": [
+                  {
+                    "Attribute:type": "stop"
+                  }
+                ],
+                "chord": ""
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "D",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "3",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "480",
+                "type": "eighth",
+                "dot": null,
+                "tie": null,
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "4"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "480",
+                "type": "eighth",
+                "dot": null,
+                "tie": [
+                  {
+                    "Attribute:type": "stop"
+                  }
+                ],
+                "chord": ""
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "G",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "4",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "480",
+                "type": "eighth",
+                "dot": null,
+                "tie": [
+                  {
+                    "Attribute:type": "stop"
+                  }
+                ],
+                "chord": ""
+              }
+            ],
+            "Attribute:number": "8"
+          },
+          {
+            "attributes": null,
+            "direction": null,
+            "note": [
+              {
+                "pitch": [
+                  {
+                    "step": "A",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "5",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "dot": null,
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "3"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "6"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "1440",
+                "type": "quarter",
+                "dot": "",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "G",
+                    "octave": "4",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "1",
+                        "string": "3"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "1440",
+                "type": "quarter",
+                "dot": "",
+                "chord": "",
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "B",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "1440",
+                "type": "quarter",
+                "dot": "",
+                "chord": "",
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "A",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "5",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "1440",
+                "type": "quarter",
+                "dot": "",
+                "chord": "",
+                "tie": [
+                  {
+                    "Attribute:type": "stop"
+                  }
+                ]
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "G",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "4",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "480",
+                "type": "eighth",
+                "dot": null,
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "dot": null,
+                "chord": null,
+                "tie": null
+              }
+            ],
+            "Attribute:number": "9"
+          },
+          {
+            "attributes": null,
+            "direction": null,
+            "note": [
+              {
+                "pitch": [
+                  {
+                    "step": "B",
+                    "octave": "3"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "5"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "A",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "3"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "D",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "3",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": [
+                  {
+                    "Attribute:type": "stop"
+                  }
+                ]
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "F",
+                    "octave": "4",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "4",
+                        "string": "4"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "B",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "F",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "3"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "6"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              }
+            ],
+            "Attribute:number": "10"
+          },
+          {
+            "attributes": null,
+            "direction": null,
+            "note": [
+              {
+                "pitch": [
+                  {
+                    "step": "D",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "4"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "G",
+                    "octave": "4",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "1",
+                        "string": "3"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "A",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "5",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "B",
+                    "octave": "3"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "5"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "B",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "A",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "5",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": "",
+                "tie": [
+                  {
+                    "Attribute:type": "stop"
+                  }
+                ]
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "F",
+                    "octave": "4",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "4",
+                        "string": "4"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null,
+                "tie": null
+              }
+            ],
+            "Attribute:number": "11"
+          },
+          {
+            "attributes": null,
+            "direction": null,
+            "note": [
+              {
+                "pitch": [
+                  {
+                    "step": "G",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "4",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "3"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "6"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "G",
+                    "octave": "4",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "1",
+                        "string": "3"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": ""
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": ""
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "C",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "G",
+                    "octave": "4",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "1",
+                        "string": "3"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null
+              }
+            ],
+            "Attribute:number": "12"
+          },
+          {
+            "attributes": null,
+            "direction": null,
+            "note": [
+              {
+                "pitch": [
+                  {
+                    "step": "B",
+                    "octave": "3"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "5"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "D",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "3",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": ""
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "B",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "7",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "A",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "3"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "F",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": ""
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "3"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "6"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "G",
+                    "octave": "4",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "1",
+                        "string": "3"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": ""
+              }
+            ],
+            "Attribute:number": "13"
+          },
+          {
+            "attributes": null,
+            "direction": null,
+            "note": [
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "G",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "4",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "B",
+                    "octave": "3"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "5"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "F",
+                    "octave": "4",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "4",
+                        "string": "4"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": ""
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "C",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": ""
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "4"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "A",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "3"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "chord": ""
+              }
+            ],
+            "Attribute:number": "14"
+          },
+          {
+            "attributes": null,
+            "direction": null,
+            "note": [
+              {
+                "pitch": [
+                  {
+                    "step": "A",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "5",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "dot": null,
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "3"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "6"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "1440",
+                "type": "quarter",
+                "dot": "",
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "G",
+                    "octave": "4",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "1",
+                        "string": "3"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "1440",
+                "type": "quarter",
+                "dot": "",
+                "chord": ""
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "B",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "2"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "1440",
+                "type": "quarter",
+                "dot": "",
+                "chord": ""
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "480",
+                "type": "eighth",
+                "dot": null,
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "F",
+                    "octave": "4",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "4",
+                        "string": "4"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "dot": null,
+                "chord": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "A",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "3"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "dot": null,
+                "chord": ""
+              }
+            ],
+            "Attribute:number": "15"
+          },
+          {
+            "attributes": null,
+            "direction": null,
+            "note": [
+              {
+                "pitch": [
+                  {
+                    "step": "B",
+                    "octave": "3"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "5"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "dot": null,
+                "time-modification": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "A",
+                    "octave": "4"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "3"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "dot": null,
+                "time-modification": null
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "E",
+                    "octave": "5"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "0",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "dot": "",
+                "time-modification": [
+                  {
+                    "actual-notes": "3",
+                    "normal-notes": "2"
+                  }
+                ]
+              },
+              {
+                "pitch": [
+                  {
+                    "step": "F",
+                    "octave": "5",
+                    "alter": "1"
+                  }
+                ],
+                "notations": [
+                  {
+                    "technical": [
+                      {
+                        "fret": "2",
+                        "string": "1"
+                      }
+                    ]
+                  }
+                ],
+                "voice": "1",
+                "duration": "960",
+                "type": "quarter",
+                "dot": "",
+                "time-modification": [
+                  {
+                    "actual-notes": "3",
+                    "normal-notes": "2"
+                  }
+                ]
+              }
+            ],
+            "Attribute:number": "16"
+          }
+        ],
+        "Attribute:id": "P1"
+      }
+    ]
+  }
+]

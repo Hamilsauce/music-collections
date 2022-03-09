@@ -8,78 +8,150 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <title>new pipe</title>
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:500|Josefin+Sans:300,600" rel="stylesheet" type="text/css">
+
+  <title>Music File Systdm</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/7.3.0/rxjs.umd.min.js" integrity="sha512-y3JTS47nnpKORJX8Jn1Rlm+QgRIIZHtu3hWxal0e81avPrqUH48yk+aCi+gprT0RMAcpYa0WCkapxe+bpBHD6g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" href="./style.css" />
+  <!-- <link rel="stylesheet" href="./style.css" /> -->
+  <link rel="stylesheet" href="/css/fs-style.css" />
+  <!-- <link rel="stylesheet" href="/css/collapsible.css" /> -->
 </head>
 
 <body>
   <main id="app">
     <header id="appHeader">
-      <div id="appHeader_title">File Viewer</div>
+      <div id="appHeader-title">File Viewer</div>
     </header>
     <section id="appBody">
-      <div class="fileView">
-        <header class="fileView_top">
-          <h3>FILE VIEWER</h3>
+
+      <div id="file-system">
+        <header id="fs-topbar">
+          <div id="fs-topbar-breadcrumbs">/</div>
+          <div id="fs-topbar-options">
+            <div class="fs-topbar-button">Go</div>
+            <div class="fs-topbar-button">Rename</div>
+            <div class="fs-topbar-button">New +</div>
+          </div>
         </header>
-        <pre>
-          
-        <ul id="fileView_tree">
-          <li class="treeNode">Folder 1</li>
-          <li class="treeNode">Folder 2</li>
-          <li class="treeNode">Folder 3</li>
-          <li class="treeNode">Folder 4</li>
-          <li class="treeNode">Folder 5</li>
-          <li class="treeNode">Folder 6</li>
-          <li id="" class="node" data-kind="folder-file">
-            <div class="treeNode fs-node--body">
-              <!-- ONLY USE folder-toggle-button for FOLDERS -->
-              <div class="fs-node--controls">
-                <!-- <svg class="folder-toggle-button" x="0px" y="0px" width="48" height="48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 48 48" >
-                  <rect id="folder-plus" fill="white" x="0" y="0" width="48" height="48" />
-                  <path id="folder-minus" fill="black" d="M416,277.333H277.333V416h-42.666V277.333H96v-42.666h138.667V96h42.666v138.667H416V277.333z" />
-                </svg> -->
+
+        <div id="fs-content-container">
+          <ul class="fs-node-list" id="fs-content-display">
+            <li id="" class="fs-node" data-is-root="true" data-selected="false" data-attached="true" data-node-type="folder">
+              <div class="fs-node-body">
+                <svg class="folder-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 512 512">
+                  <g id="drop-down-icon">
+                    <polygon points="128,192 256,320 384,192 	" />
+                  </g>
+                </svg>
+                <div class="fs-node-body-content">FOLDER ROOT</div>
+                <div class="fs-node-body-controls">+</div>
               </div>
-              <div class="fs-node--name">Folder Node</div>
-            </div>
-            <ul class="fs-node--nodeList"></ul>
-        
-          </li>
-        </ul>
-        </pre>
-      
-      </div>
+              <ul class="fs-node-list">
+                <li class="fs-node" id="" data-selected="" data-attached="false" data-node-type="file">
+                  <div class="fs-node-body">
+                    <div class="fs-node-body-content">FOLDER CHILD</div>
+                    <div class="fs-node-body-controls"></div>
+                  </div>
+                </li>
+                <li class="fs-node" id="" data-selected="" data-attached="false" data-node-type="file">
+                  <div class="fs-node-body">
+                    <div class="fs-node-body-content">FOLDER CHILD</div>
+                    <div class="fs-node-body-controls"></div>
+                  </div>
+                </li>
+                <li class="fs-node" id="" data-selected="" data-attached="false" data-node-type="file">
+                  <div class="fs-node-body">
+                    <div class="fs-node-body-content">FOLDER CHILD</div>
+                    <div class="fs-node-body-controls"></div>
+                  </div>
+                </li>
+                <li class="fs-node" id="" data-selected="" data-attached="false" data-node-type="file">
+                  <div class="fs-node-body">
+                    <div class="fs-node-body-content">FOLDER CHILD</div>
+                    <div class="fs-node-body-controls"></div>
+                  </div>
+                </li>
+
+              </ul>
+            </li>
+          </ul>
+        </div>
     </section>
   </main>
-  <!--   - -->
+  -
+  <script type="module" src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  
+  <script type="module" src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  
+  // ...
+  
+  <script type="module" src="./init-firebase.js"></script>
+  <!-- <script type="module">
+  
+  
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js'
+  
+    // If you enabled Analytics in your project, add the Firebase SDK for Google Analytics
+    // import { analytics } from 'https://www.gstatic.com/firebasejs/9.6.8/firebase-analytics.js'
+  
+    // Add Firebase products that you want to use
+    // import { auth } from 'https://www.gstatic.com/firebasejs/9.6.8/firebase-auth.js'
+    import { firestore } from 'import { } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-firestore.js'
+    const fsInstance = initializeApp({
+      apiKey: "AIzaSyBVnhy7RGLeKxhzywHJ2e5RV5HjYaQYQhQ",
+      authDomain: "home-db-ed6f0.firebaseapp.com",
+      projectId: "home-db-ed6f0",
+      storageBucket: "home-db-ed6f0.appspot.com",
+      messagingSenderId: "3177858927",
+      appId: "1:3177858927:web:aeb4b8b013b35165564a9a"
+    })
+  </script> -->
   <script src="./script.js" type="module"></script>
-  <script src="./data/getRecursive.js" type="module"></script>
+  <!-- <script src="./firebase.js" type="module"></script> -->
+  <!-- <script src="./data/getRecursive.js" type="module"></script> -->
   <!-- <script src="./view-builder.js" type="module"></script> -->
   <!-- <script src="./node-toggle.js" type="module"></script> -->
-  <!-- FOLDER -->
-  <template id="folder-node-template">
-    <li id="" class="node" data-kind="folder-file">
-      <div class="fs-node--body">
-        <!-- ONLY USE folder-toggle-button for FOLDERS -->
-        <div class="fs-node--controls">
-          <svg class="folder-toggle-button" x="0px" y="0px" width="512px" height="512px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-            <rect id="folder-plus" fill="white" x="96" y="240" width="306" height="48" />
-            <path id="folder-minus" fill="none" d="M416,277.333H277.333V416h-42.666V277.333H96v-42.666h138.667V96h42.666v138.667H416V277.333z" />
-          </svg>
-        </div>
-        <div class="fs-node--name"></div>
-      </div>
-      <ul class="fs-node--nodeList"></ul>
+
+  <!-- NODE -->
+  <template id="fs-node-template">
+    <li id="" class="fs-node node" data-is-root="false" data-selected="false" data-attached="false" data-node-type="" data-active="false">
+      <button id="" class="collapsible-button">Open Child Section 1</button>
+      <section class="collapsible-content-wrapper">
+        <ul class="collapsible-content"></ul>
+      </section>
     </li>
   </template>
-  <!-- FILE -->
-  <template id="fs-node-template">
-    <li class="fs-node" data-nodeType="">
-      <div class="fs-node--body">
-        <div class="fs-node--name"></div>
-        <div class="fs-node--controls"></div>
+
+  <!-- NODE -->
+  <template id="fs-file-template">
+
+    <li id="" class="fs-node" data-is-root="true" data-selected="false" data-attached="true" data-node-type="folder">
+      <div class="fs-node-body">
+        <svg class="folder-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 512 512">
+          <g id="drop-down-icon">
+            <polygon points="128,192 256,320 384,192 	" />
+          </g>
+        </svg>
+        <div class="fs-node-body-content">FOLDER ROOT</div>
+        <div class="fs-node-body-controls">+</div>
       </div>
+    </li>
+  </template>
+
+  <!-- FOLDER -->
+  <template id="fs-folder-template">
+    <li id="" class="fs-node" data-is-root="true" data-selected="false" data-attached="true" data-node-type="folder">
+      <div class="fs-node-body">
+        <svg class="folder-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 512 512">
+          <g id="drop-down-icon">
+            <polygon points="128,192 256,320 384,192 	" />
+          </g>
+        </svg>
+        <div class="fs-node-body-content">FOLDER node</div>
+        <div class="fs-node-body-controls">+</div>
+      </div>
+      <ul class="fs-node-content" data-node-content-type="node-list or attribute-list"></ul>
     </li>
   </template>
 

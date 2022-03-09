@@ -1,0 +1,27 @@
+.collapsible .game-collapsible
+
+.content {}
+
+.content-children {}
+
+.game {}
+
+#folder-template {}
+
+#file-template {}
+ .fs-node {
+   
+ }
+
+  .folder-template{}
+  .folder {}
+  .folder-button {}
+  .node-list-container{}
+  .node-list{}
+  .file-template{}
+  
+  .file
+  .file-button{}
+  .file-attribute-container{}
+  .attribute-list{}
+  .file-attribute{}

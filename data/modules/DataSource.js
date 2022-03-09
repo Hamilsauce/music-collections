@@ -4,11 +4,7 @@ const { fromFetch } = rxjs.fetch;
 
 export class DataSource {
   constructor(url = '', format = 'json', keys = []) {
-    format = ['json', 'text']
-      .includes(format.toLowerCase()) ?
-      format : 'json'
-
-
+    this.format = ['json', 'text'].includes(format.toLowerCase()) ? format : 'json'
     this.connection = null;
     this._responseSubject$ = new AsyncSubject();
   }
@@ -16,7 +12,7 @@ export class DataSource {
   connect(url = '', format = 'json') {
     this.connection = this.request(url, format)
       .subscribe(this.responseSubject$);
-    
+
     return this.responseSubject$;
   }
 
@@ -25,7 +21,6 @@ export class DataSource {
       .pipe(
         mergeMap(_ => _[format]()),
       );
-
   }
 
   disconnect() {

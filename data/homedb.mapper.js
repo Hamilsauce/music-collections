@@ -1,4 +1,4 @@
-const { forkJoin, iif, ReplaySubject, AsyncSubject, Subject, interval, of, fromEvent, merge, empty, delay, from } = rxjs;
+const { forkJoin, iif, ReplaySubject, AsyncSubject, Subject, interval, of , fromEvent, merge, empty, delay, from } = rxjs;
 const { flatMap, reduce, groupBy, toArray, mergeMap, switchMap, scan, map, tap, filter } = rxjs.operators;
 const { fromFetch } = rxjs.fetch;
 import { DataSource } from '/data/modules/DataSource.js';
@@ -24,12 +24,12 @@ const groupByCollection$ = dbConnection$
 const folderRefCollection$ = groupByCollection$
   .pipe(filter(_ => _.key === 'folderRefs'));
 
-// const groupByParentIdPipe$ = groupByCollection$
 const groupByParentIdPipe = (collections$, collectionName) =>
   collections$.pipe(
     mergeMap((group$) => group$
       .pipe(
         filter(([k, v]) => k === collectionName),
+        tap(x => console.log('GROUPBY PARENTID PIPE START', x)),
         map(([k, v]) => Object.values(v)),
         mergeMap(_ => from(_)
           .pipe(groupBy(({ parentId }) => parentId))
@@ -47,10 +47,8 @@ const getFolder = (id) => folderRefCollection$
     )
   );
 
-let depth = 0;
 
-const getRecursive = (folder$, depth = 0) => {
-
+const treeRecursor = (folder$, depth = 0) => {
   return folder$
     .pipe(
       map(folder => {
@@ -65,9 +63,9 @@ const getRecursive = (folder$, depth = 0) => {
       })),
       flatMap(parentWithChildIds =>
         forkJoin([
-          of(parentWithChildIds.parent),
+          of (parentWithChildIds.parent),
           ...parentWithChildIds.childIds
-            .map((childId) => getRecursive(getFolder(childId)))
+            .map((childId) => treeRecursor(getFolder(childId)))
         ])
       ),
       tap(parent => {
@@ -97,15 +95,14 @@ const rootFolder$ = rootId$.pipe(
 
 
 
-
-
-
 const buildTreePipe = (groupedStream$) => {
   return groupedStream$
     .pipe(
       mergeMap(group$ => group$
         .pipe(
           toArray(),
+          // tap(x => console.log('BUILD TREE PIPE START ', x)),
+          // map(_=>_[1]),
           scan((folderMap, group, i) => {
             const pid = group[0].parentId;
             const parentFolderObj = folderMap[pid] ? folderMap[pid] : {};
@@ -117,14 +114,27 @@ const buildTreePipe = (groupedStream$) => {
                 entries() { return Object.entries(this.children); },
               }
             };
+            console.log('folderMap', folderMap)
             return folderMap;
           }, {}),
-        )
+        ),
       ),
       reduce((collectionMap, group, i) => ({ ...collectionMap, ...group }), {}),
-      tap(x => console.log('BUILD TREE END ', x)),
-    );
+      tap(x => console.log('BUILD TREE PIPE END ', x)),
+    )
+
 };
+
+
+
+
+groupByParentIdPipe(folderRefCollection$, 'folderRefs')
+  .pipe(
+    toArray(),
+    tap(x => console.log('PARENT ID GROUP SUBSCRIBE', x)),
+  )
+// .subscribe()
+
 
 const addFileDataPipe = (treeStream$) => {
   return treeStream$
@@ -140,22 +150,33 @@ const addFileDataPipe = (treeStream$) => {
         });
         return collectionMap;
       }),
-      // tap(x => console.log('x2', x)),
-    );
-};
+      tap(x => console.log('x2', x)),
+    )
+}
+
+
+addFileDataPipe(
+    buildTreePipe(
+      groupByParentIdPipe(folderRefCollection$, 'folderRefs')
+    )
+  )
+  .subscribe()
+
+
+
 
 const mapCollections$ = groupByCollection$
   .pipe(
     mergeMap((group$) => group$
       .pipe(
         map(([key, data]) => ({
-          key,
-          data: key === 'rootId' ? data : [...Object.entries(data)].reduce((entries, entry, i) => {
-            if (!Array.isArray(entry)) entry = [entry.id, entry];
+            key,
+            data: key === 'rootId' ? data : [...Object.entries(data)].reduce((entries, entry, i) => {
+              if (!Array.isArray(entry)) entry = [entry.id, entry];
 
-            return entries.set(entry[0], entry[1]);
-          }, new Map())
-        }),
+              return entries.set(entry[0], entry[1]);
+            }, new Map())
+          }),
           tap(x => console.log(' BEFORE END mapCollections$ 2', x)),
         )
       )
@@ -211,7 +232,16 @@ const folderTreeSubject$ = new Subject();
 
 const parentFolders$ = addFileDataPipe(buildTreePipe(foldersByParentId$));
 mapCollections$.subscribe(collectionSubject$);
-const folderTreeSubscription = getRecursive(rootFolder$, 0).subscribe(folderTreeSubject$);
+const folderTreeSubscription = treeRecursor(rootFolder$, 0).subscribe(folderTreeSubject$);
+parentFolders$
+  .pipe(
+    tap(x => console.log('PARENT FOLDERS$', x['8y17ynkbytusbghytq'])),
+    // mergeMap((group$) => group$
+    // .pipe())
+  )
+  .subscribe()
+
+
 
 export default {
   collectionSubject$,

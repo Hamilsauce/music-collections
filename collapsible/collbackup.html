@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="collapsible.css" type="text/css" media="all" />
+</head>
+
+<body>
+  <div class="root">
+    <button class="collapsible-button root-collapsible">Open Section 1</button>
+    <div class="root-content collapsible-content">
+      <div class="collapsible-content-wrapper">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="child-collapsible">
+          <button class="collapsible-button child-collapsible">Open Section 1</button>
+          <div class="collapsible-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="child-collapsible">
+          <button class="collapsible-button child-collapsible">Open Section 1</button>
+          <div class="collapsible-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="child-collapsible">
+          <button class="collapsible-button child-collapsible">Open Section 1</button>
+          <div class="collapsible-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="series-container">
+     <section ref="seriesCollapsible" class="collapsible series-collapsible" @click="handleSeriesCollapsibleClicked">
+       <div class="title-container">
+         <div ref="seriesTitle" :class="collapsibleEditClass" class="series-title">Series {{seriesData.id}}</div>
+         <button class="submit-series-name" @click.stop="submitSeriesTitleEdit" :class="titleButtonHideClass">
+           ok
+         </button>
+       </div>
+     </section>
+     <section class="series-content-wrapper content-wrapper" ref="contentWrapper">
+       <div class="series-content content" ref="seriesContent">
+         <header class="series-header">
+           <div class="series-players-button" @click="handlePlayersClicked">{{ seriesData.players.length }} Players</div>
+           <div class="game-count-display">Games: {{ games.length }}</div>
+           <smp-series-menu :seriesId="seriesData.id" @series-menu-option-clicked="mapSeriesActions"></smp-series-menu>
+         </header>
+         <ul class="game-list"></ul>
+       </div>
+     </section>
+   </div>
+  <!-- 
+    
+    SMP-SERIES-TEMPLATE
+  -->
+  <template id="smp-series-template">
+    <li class="series-container">
+      <section ref="seriesCollapsible" class="collapsible series-collapsible" @click="handleSeriesCollapsibleClicked">
+        <div class="title-container">
+          <div ref="seriesTitle" :class="collapsibleEditClass" class="series-title">Series {{seriesData.id}}</div>
+          <button class="submit-series-name" @click.stop="submitSeriesTitleEdit" :class="titleButtonHideClass">
+            ok
+          </button>
+        </div>
+      </section>
+      <section class="series-content-wrapper content-wrapper" ref="contentWrapper">
+        <div class="series-content content" ref="seriesContent">
+          <header class="series-header">
+            <div class="series-players-button" @click="handlePlayersClicked">{{ seriesData.players.length }} Players</div>
+            <div class="game-count-display">Games: {{ games.length }}</div>
+            <smp-series-menu :seriesId="seriesData.id" @series-menu-option-clicked="mapSeriesActions"></smp-series-menu>
+          </header>
+          <ul class="game-list"></ul>
+        </div>
+      </section>
+    </li>
+  </template>
+
+  <script src="collapsible.js" type="module" charset="utf-8"></script>
+</body>
+
+</html>
