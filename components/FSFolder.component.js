@@ -13,10 +13,12 @@ export class FSFolderComponent extends FSNode {
     this._nodeContent = null;
     this.files = new Map();
     this.loadedChildren = []
+    this.hasLoadedChildren = false
 
     this.children = this.model.children
     this._name; //  = this.name;
     this._id
+   
     this.messages$.pipe(
       filter(_ => _ === this.id),
       // tap(x => console.log('foldèr messagw aftr filter', x)),
@@ -55,6 +57,7 @@ export class FSFolderComponent extends FSNode {
 
   async loadChildNodes() {
     if (this.name === 'file-system') return
+    if (this.hasLoadedChildren) return
     // console.log('[... this.children.folders.values()]', [... this.children.folders.values()])
     // const folders = await this.children.folders.values()
     // const files = await this.children.files.values()
@@ -80,7 +83,7 @@ export class FSFolderComponent extends FSNode {
       this.loadedChildren.push(childComp)
       this.append(childComp.node, this.nodeContent)
     }
-
+this.hasLoadedChildren = true;
     // for (const child of files) {
     //   const childComp = new FSFolder(model) //, this.store)
 
@@ -88,6 +91,7 @@ export class FSFolderComponent extends FSNode {
     //   this.append(childComp.node, this.nodeContent)
     // }
     // console.log('loadChildNodes this ', this)
+ 
   }
 
   handleSelect(e) {
@@ -113,8 +117,9 @@ export class FSFolderComponent extends FSNode {
     this.nodeContent.classList.add('fs-node-nodeContent')
     this.show = false;
 
-    this.loadChildNodes()
+    // this.loadChildNodes()
   }
+
   get nodeContent() { return this._nodeContent === null ? this.el('.fs-node-content') : this._nodeContent };
 
   set nodeContent(val) { this._nodeContent = val; }

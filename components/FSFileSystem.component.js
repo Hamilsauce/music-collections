@@ -5,6 +5,7 @@ const { fromFetch } = rxjs.fetch;
 
 import { FSFolderComponent } from '/components/FSFolder.component.js';
 import { FSFileComponent } from '/components/FSFile.component.js';
+import { CollapsibleNode } from '/components/CollapsibleNode.component.js'
 import { FSFileSystemModel } from '/fs-models/index.js'
 
 

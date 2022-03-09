@@ -2,16 +2,16 @@ const { iif, BehaviorSubject, ReplaySubject, AsyncSubject, Subject, interval, of
 const { throttleTime, toArray, mergeMap, switchMap, scan, take, takeWhile, map, tap, startWith, filter, mapTo } = rxjs.operators;
 const { fromFetch } = rxjs.fetch;
 
-import fileSource from '/db/files.source.js';
+import fileSource from '/db/_sources/files.source.js'
 // import fileBatch from '/db/files.batch.js';
-import folderSource from '/db/folders.source.js';
+import folderSource from '/db/_sources/folders.source.js'
 import { FSNodeMap, FSNamedMap } from '/fs-models/index.js';
 // import { batchToFirestore } from '/db/firestore-batch.js';
 import db from '/firebase.js'
 
 // const fileVals = Object.values(fileBatch.entries)
 // const b2f = batchToFirestore('files',fileVals)
-
+// /db/.sources 
 
 
 class Collection extends FSNamedMap {

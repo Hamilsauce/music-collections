@@ -36,44 +36,7 @@
 
         <div id="fs-content-container">
           <ul class="fs-node-list" id="fs-content-display">
-            <li id="" class="fs-node" data-is-root="true" data-selected="false" data-attached="true" data-node-type="folder">
-              <div class="fs-node-body">
-                <svg class="folder-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 512 512">
-                  <g id="drop-down-icon">
-                    <polygon points="128,192 256,320 384,192 	" />
-                  </g>
-                </svg>
-                <div class="fs-node-body-content">FOLDER ROOT</div>
-                <div class="fs-node-body-controls">+</div>
-              </div>
-              <ul class="fs-node-list">
-                <li class="fs-node" id="" data-selected="" data-attached="false" data-node-type="file">
-                  <div class="fs-node-body">
-                    <div class="fs-node-body-content">FOLDER CHILD</div>
-                    <div class="fs-node-body-controls"></div>
-                  </div>
-                </li>
-                <li class="fs-node" id="" data-selected="" data-attached="false" data-node-type="file">
-                  <div class="fs-node-body">
-                    <div class="fs-node-body-content">FOLDER CHILD</div>
-                    <div class="fs-node-body-controls"></div>
-                  </div>
-                </li>
-                <li class="fs-node" id="" data-selected="" data-attached="false" data-node-type="file">
-                  <div class="fs-node-body">
-                    <div class="fs-node-body-content">FOLDER CHILD</div>
-                    <div class="fs-node-body-controls"></div>
-                  </div>
-                </li>
-                <li class="fs-node" id="" data-selected="" data-attached="false" data-node-type="file">
-                  <div class="fs-node-body">
-                    <div class="fs-node-body-content">FOLDER CHILD</div>
-                    <div class="fs-node-body-controls"></div>
-                  </div>
-                </li>
-
-              </ul>
-            </li>
+     ?
           </ul>
         </div>
     </section>
@@ -81,10 +44,9 @@
   -
   <script type="module" src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
   
-  <script type="module" src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <!-- <script type="module" src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script> -->
   <script type="module" src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
-  
-  // ...
+
   
   <script type="module" src="./init-firebase.js"></script>
   <!-- <script type="module">
@@ -123,7 +85,7 @@
     </li>
   </template>
 
-  <!-- NODE -->
+  NODE
   <template id="fs-file-template">
 
     <li id="" class="fs-node" data-is-root="true" data-selected="false" data-attached="true" data-node-type="folder">
@@ -139,7 +101,7 @@
     </li>
   </template>
 
-  <!-- FOLDER -->
+  FOLDER
   <template id="fs-folder-template">
     <li id="" class="fs-node" data-is-root="true" data-selected="false" data-attached="true" data-node-type="folder">
       <div class="fs-node-body">
@@ -155,7 +117,48 @@
     </li>
   </template>
 
+<!-- 
 
+       <li id="" class="fs-node" data-is-root="true" data-selected="false" data-attached="true" data-node-type="folder">
+         <div class="fs-node-body">
+           <svg class="folder-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 512 512">
+             <g id="drop-down-icon">
+               <polygon points="128,192 256,320 384,192 	" />
+             </g>
+           </svg>
+           <div class="fs-node-body-content">FOLDER ROOT</div>
+           <div class="fs-node-body-controls">+</div>
+         </div>
+         <ul class="fs-node-list">
+           <li class="fs-node" id="" data-selected="" data-attached="false" data-node-type="file">
+             <div class="fs-node-body">
+               <div class="fs-node-body-content">FOLDER CHILD</div>
+               <div class="fs-node-body-controls"></div>
+             </div>
+           </li>
+           <li class="fs-node" id="" data-selected="" data-attached="false" data-node-type="file">
+             <div class="fs-node-body">
+               <div class="fs-node-body-content">FOLDER CHILD</div>
+               <div class="fs-node-body-controls"></div>
+             </div>
+           </li>
+           <li class="fs-node" id="" data-selected="" data-attached="false" data-node-type="file">
+             <div class="fs-node-body">
+               <div class="fs-node-body-content">FOLDER CHILD</div>
+               <div class="fs-node-body-controls"></div>
+             </div>
+           </li>
+           <li class="fs-node" id="" data-selected="" data-attached="false" data-node-type="file">
+             <div class="fs-node-body">
+               <div class="fs-node-body-content">FOLDER CHILD</div>
+               <div class="fs-node-body-controls"></div>
+             </div>
+           </li>
+
+         </ul>
+       </li>
+
+, -->
 </body>
 
 </html>

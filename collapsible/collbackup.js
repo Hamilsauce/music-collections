@@ -26,6 +26,8 @@ export class CollapsibleNode {
     this.nodes.set(n.self, n)
 
     this.append(n)
+    // this.adjustToChildHeight(n.self.style.maxHeight)
+    // this.content.style.maxHeight = this.content.scrollHeight + "px";
 
     if (callback) callback(n)
     return n;
@@ -52,7 +54,7 @@ export class CollapsibleNode {
     else { this.content.appendChild(element.self); }
 
     callback(element);
-    this.adjustToChildHeight.bind(this)(element.self.style.maxHeight)
+    this.adjustToChildHeight(element.self.style.maxHeight)
     return element;
   }
 
@@ -80,10 +82,11 @@ export class CollapsibleNode {
       this.content.style.maxHeight = null;
     } else {
       this.content.style.maxHeight = this.content.scrollHeight + "px";
+        // .style.maxHeight = this.content.scrollHeight + "px";
+      // e.target.nextElementSibling
+      // ('.collapsible-content-wrapper')
     }
 
-    const childClickEvent = new CustomEvent('child-clicked', { bubbles: true, detail: { childMaxHeight: this.content.style.maxHeight } })
-    this.self.dispatchEvent(childClickEvent)
   }
 
   handleChildButtonClick(e) {
@@ -110,14 +113,38 @@ export class CollapsibleNode {
   get active() { return this._active };
   set active(newValue) {
     this._active = newValue
-    this.toggleActiveState.bind(this)(this.active);
+    this.toggleActiveState(this.active);
 
     if (!this.active) {
       this.nodes.forEach((ch) => {
         ch.active = false;
         ch.content.style.maxHeight = null
       });
+      // const stateEvt = new CustomEvent('node-click', { bubbles: true, detail: { target: this, state: 'inactive' } })
+      // this.self.dispatchEvent(stateEvt)
+
     }
+    // if (this.active) {
+    //   this.nodes.forEach((ch) => {
+    //     ch.active = true;
+    //     ch.content.style.maxHeight = null
+
+    //     // t = `${parseInt(ch.con/tent.scrollHeight) + parseInt(childHeight)}px`;
+    //   });
+    //   // const stateEvt = new CustomEvent('node-click', { bubbles: true, detail: { target: this, state: 'inactive' } })
+    //   // this.self.dispatchEvent(stateEvt)
+
+    // }
+    // else if (this.active) {
+
+    //   const stateEvt = new CustomEvent('node-click', { bubbles: true, detail: { target: this,state: 'active'  } })
+    //   this.self.dispatchEvent(stateEvt)
+
+    //   // this.nodes.forEach((ch) => {
+    //   //   ch.active = false;
+    //   //   ch.content.style.maxHeight = null
+    //   // });
+    // }
   }
 };
 

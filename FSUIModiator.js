@@ -46,14 +46,7 @@ export class FSDOMMutator {
     }
   }
 
-  append(element, parent, position, callback = () => {}) {
-    if (position) { parent.insertBefore(element, position); }
-    else { parent.appendChild(element); }
-
-    callback(element, parent);
-    return element;
-  }
-
+  
   file(node, parent = this.hostElement, before) {
     parent = parent.closest('details');
     node = this.interrupt(node);

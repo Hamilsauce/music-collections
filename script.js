@@ -1,7 +1,7 @@
 import ham from 'https://hamilsauce.github.io/hamhelper/hamhelper1.0.0.js';
 // import homedb from '/data/homedb.mapper.js'
 // import { FileTree } from '/FileTree.js'
-// import { FSFileSystemModel } from '/fs-models/index.js'
+import { FSFileSystemModel } from '/fs-models/index.js'
 import { FSFileSystemComponent } from '/components/FSFileSystem.component.js'
 import store from '/db/store.db.js';
 // import homeDbForkJoin$ from '/data/connectors/homedb-local.connector.js'
@@ -88,8 +88,6 @@ export class App {
     // }, 2500)
 
     // this.fs.createFolder('new folder 2')
-    // this.fs.printCurrentFolder()
-
     // this.fs.openFolder('new folder 2')
     // this.fs.printCurrentFolder()
     // this.fs.createFolder('new folder 3')

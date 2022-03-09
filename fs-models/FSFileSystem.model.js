@@ -12,15 +12,16 @@ const { date, array, utils, text } = ham;
 export class FSFileSystemModel {
   constructor(store) {
     this.store = store;
-    this.request$ = new BehaviorSubject(['8y17ynkbytusbghytq'])
-    .pipe(
-        
-    )
+    const rootId = this.store.findFolder(_ => _.isRoot).id
+    console.warn('rootId', rootId)
+    this.request$ = new BehaviorSubject([rootId])
+      .pipe()
 
     this.connection$ = this.store.connect(this.request$);
 
     this.response$ = this.connection$.pipe(
       distinctUntilChanged((prev, curr) => {
+        console.log(' prev[prev.length - 1] === curr[curr.length - 1]',  prev[prev.length - 1] === curr[curr.length - 1])
         return prev[prev.length - 1] === curr[curr.length - 1]
       }),
       map(resp => {
@@ -40,14 +41,6 @@ export class FSFileSystemModel {
       }),
       tap(respArray => this.currentFolderPath = respArray),
     ) //.subscribe();
-
-
-
-    // console.log('this.store', [...this._rootFolder.children])
-    setTimeout(() => {
-      // console.log('FILE rootFolder', this.rootFolder);
-      // console.log('FILE SYS', this);
-    }, 1000)
   }
 
   init() {
@@ -55,14 +48,14 @@ export class FSFileSystemModel {
     // Create and render root (collapsed)
     // Then load and create children folder models
     // Create and stotr child elements
-
   }
 
-
-
   has(name) { return this.currentFolder.has(name) }
+
   remove(name) { return this.currentFolder.remove(name) }
+
   insert(node) { return this.currentFolder.insert(node) }
+
   get(name) { return this.currentFolder.get(name) }
 
   createFile(name, options = {}) {
@@ -102,9 +95,10 @@ export class FSFileSystemModel {
   openFolder(path) {
     if (!path) return;
     const dir = this.gotoFolderFromPath(path);
+  if (!dir ||dir.isRoot) return;
     const pathArray = [dir];
- console.log('path,pathArray', path,pathArray)
-    let parent = dir.parent ? dir.parent :undefined;
+    console.log('path,pathArray', path, pathArray)
+    let parent = dir.parent ? dir.parent : undefined;
 
     while (parent) {
       pathArray.unshift(parent)
@@ -145,25 +139,25 @@ export class FSFileSystemModel {
 
   get rootFolder() { return this._rootFolder }
   get currentFolder() {
-    return this._currentFolderPath[this._currentFolderPath.length - 1]
+    // return this._currentFolderPath[this._currentFolderPath.length - 1]
     return this._currentFolder
   }
 
   get currentFolderPath() { return this._currentFolderPath.map(_ => _.name) }
   set currentFolderPath(val) {
-    console.log('val', val)
+    console.log('set currentFolderPath', val)
     this._currentFolderPath = val
+    this._currentFolder = this._currentFolderPath[this._currentFolderPath.length - 1]
     console.log('this._currentFolderPath', this._currentFolderPath)
     this.request$.next(this._currentFolderPath.map(_ => _.id))
-    // this._currentFolder = this._currentFolderPath[this._currentFolderPath.length - 1]
-
-    // this.printCurrentFolder()
 
   }
   get content() { return this.currentFolder.content }
 
   get root() { return this.rootFolder; }
+
   get name() { return 'root' } //this.rootFolder.name; }
+
   get parent() { return null }
 }
 
