@@ -1,6 +1,5 @@
 export class CollapsibleNode {
   constructor(model, parent) {
-console.log('this', this)
     this._template = document.querySelector(`#fs-node-template`).content.cloneNode(true);
     this.self = this._template.querySelector('.node');
     this.button = this._template.querySelector('.collapsible-button');
@@ -15,11 +14,10 @@ console.log('this', this)
     this.name = model.name || 'Unnamed'
     this.active = false;
 
-    this.childClickListener = this.handleChildButtonClick;
-    this.self.addEventListener('child-clicked', this.childClickListener)//.bind(this));
-    this.clickListener = this.handleButtonClick//.bind(this);
-    this.button.addEventListener('click', this.clickListener)//.bind(this));
-    
+    this.childClickListener = this.handleChildButtonClick.bind(this);
+    this.content.addEventListener('child-clicked', this.childClickListener);
+    this.clickListener = this.handleButtonClick.bind(this);
+    this.button.addEventListener('click', this.clickListener);
   };
 
   createNode(model = {}, parent, callback = (n, p) => {}) {
@@ -54,7 +52,7 @@ console.log('this', this)
     else { this.content.appendChild(element.self); }
 
     callback(element);
-    this.adjustToChildHeight(element.self.style.maxHeight)
+    this.adjustToChildHeight.bind(this)(element.self.style.maxHeight)
     return element;
   }
 
@@ -83,7 +81,6 @@ console.log('this', this)
     } else {
       this.content.style.maxHeight = this.content.scrollHeight + "px";
     }
-console.log('adjustToChildHeight AFTER handleChildButtonClick',e)
 
     const childClickEvent = new CustomEvent('child-clicked', { bubbles: true, detail: { childMaxHeight: this.content.style.maxHeight } })
     this.self.dispatchEvent(childClickEvent)
@@ -94,7 +91,6 @@ console.log('adjustToChildHeight AFTER handleChildButtonClick',e)
   }
 
   adjustToChildHeight(childMaxHeight = '') {
-console.log('adjustToChildHeight AFTER handleChILDButtonClick',e)
     const childHeight = childMaxHeight;
     this.content.style.maxHeight = `${parseInt(this.content.scrollHeight) + parseInt(childHeight)}px`;
   }

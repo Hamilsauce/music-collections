@@ -5,10 +5,10 @@ const { fromFetch } = rxjs.fetch;
 
 import { FSFolderComponent } from '/components/FSFolder.component.js';
 import { FSFileComponent } from '/components/FSFile.component.js';
-import { FSFileSystemModel } from '/fs-models/index.js'
+// import { FSFileSystemModel } from '/fs-models/index.js'
 
 
-export class FSFileSystemComponent extends FSFileSystemModel {
+export class FSFileSystemComponent{// extends FSFileSystemModel {
   constructor(store) {
     super(store);
     this.ui = {

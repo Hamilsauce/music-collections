@@ -18,7 +18,7 @@ export class FSFolderComponent extends FSNode {
     this.children = this.model.children
     this._name; //  = this.name;
     this._id
-   
+
     this.messages$.pipe(
       filter(_ => _ === this.id),
       // tap(x => console.log('foldèr messagw aftr filter', x)),
@@ -74,16 +74,17 @@ export class FSFolderComponent extends FSNode {
       let childComp;
       if (child.nodeType === 'folder') {
         childComp = new FSFolderComponent(child, messages$)
-
+        childComp.parent = this;
       } else {
         childComp = new FSFileComponent(child, messages$)
+        childComp.parent = this;
 
       }
 
       this.loadedChildren.push(childComp)
       this.append(childComp.node, this.nodeContent)
     }
-this.hasLoadedChildren = true;
+    this.hasLoadedChildren = true;
     // for (const child of files) {
     //   const childComp = new FSFolder(model) //, this.store)
 
@@ -91,7 +92,7 @@ this.hasLoadedChildren = true;
     //   this.append(childComp.node, this.nodeContent)
     // }
     // console.log('loadChildNodes this ', this)
- 
+
   }
 
   handleSelect(e) {

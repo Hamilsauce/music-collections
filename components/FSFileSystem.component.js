@@ -35,38 +35,38 @@ export class FSFileSystemComponent extends FSFileSystemModel {
       )
       .subscribe(this.clicks$)
 
-    this.makeRequest$ = this.clicks$
-      .pipe(
-        filter(_ => _.dataset.nodeType === 'folder'),
-      tap(_=> this.openFolder(`${_.dataset.name}`)),
-      // tap(_=> this.openFolder(`./${_.closest('.fs-node').querySelector('.fs-node-content').textContent}`))
-    // tap(x => this.request$.next(this.current)),  
-        tap(x => console.log('FILE SYSTEM AFTER OPEN FOLDER', this)),
-      )
-      .subscribe()
+    // this.makeRequest$ = this.clicks$
+    //   .pipe(
+    //     filter(_ => _.dataset.nodeType === 'folder'),
+    //   tap(_=> this.openFolder(`${_.dataset.name}`)),
+    //   // tap(_=> this.openFolder(`./${_.closest('.fs-node').querySelector('.fs-node-content').textContent}`))
+    // // tap(x => this.request$.next(this.current)),  
+    //     tap(x => console.log('FILE SYSTEM AFTER OPEN FOLDER', this)),
+    //   )
+    //   .subscribe()
       
 
-    this.renderStream = this.response$
-      .pipe(
-        map(response => {
-          // const node = this.createNode(this.currentFolder)
-          const clicks$ = this.clicks$
-            .pipe(
-              filter((_) => _ && _.id), // && _.id === this.currentFolder.id),
-              map(_ => _.id),
-            );
-          const node = new FSFolderComponent(this.currentFolder, clicks$)
-          console.log('node', node)
-          this.append(node.node, this.ui.content)
-          if (this.currentFolder.isRoot) {
+    // this.renderStream = this.response$
+      // .pipe(
+      //   map(response => {
+      //     // const node = this.createNode(this.currentFolder)
+      //     const clicks$ = this.clicks$
+      //       .pipe(
+      //         filter((_) => _ && _.id), // && _.id === this.currentFolder.id),
+      //         map(_ => _.id),
+      //       );
+      //     const node = new FSFolderComponent(this.currentFolder, clicks$)
+      //     console.log('node', node)
+      //     this.append(node.node, this.ui.content)
+      //     if (this.currentFolder.isRoot) {
 
-          } else {
-            // this.append(node.node, this.currentFolder.nodeContent)
+      //     } else {
+      //       // this.append(node.node, this.currentFolder.nodeContent)
 
-          }
-          return node
-        }),
-      ).subscribe()
+      //     }
+      //     return node
+      //   }),
+      // ).subscribe()
   }
 
   render(tree = {}, targetElement = document.createElement('div')) {

@@ -4,67 +4,66 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/collapsible.css" type="text/css" media="all" />
+  <!-- <link rel="stylesheet" href="/collapsible 1/collapsible.css" type="text/css" media="all" /> -->
+  <link rel="stylesheet" href="/css/fs-style.css" type="text/css" media="all" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/7.3.0/rxjs.umd.min.js" integrity="sha512-y3JTS47nnpKORJX8Jn1Rlm+QgRIIZHtu3hWxal0e81avPrqUH48yk+aCi+gprT0RMAcpYa0WCkapxe+bpBHD6g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
   <div class="app">
-    <input type="button" id="newFolderButton" value="New Folder">
-  <ul id="file-system">
-  
-    <li data-active="false" data-is-root="true" id="root" class="node">
-      <button  id="root-collapsible" class="collapsible-button">Open Section 1</button>
-      <section class="collapsible-content-wrapper">
-        <ul id="root-content" class="collapsible-content">
-          <li data-active="false" class="node">
-            <button id="" class="collapsible-button">Open Child Section 1</button>
-            <section class="collapsible-content-wrapper">
-              <ul class="collapsible-content">
-                <li data-active="false" class="node">
-                  <button id="" class="collapsible-button">Open Child Section 1</button>
-                  <section class="collapsible-content-wrapper">
-                    <ul class="collapsible-content"></ul>
-                  </section>
-                </li>
-              </ul>
-            </section>
-          </li>
-          <li data-active="false" class="node">
-            <button id="" class="collapsible-button">Open Child Section 1</button>
-            <section class="collapsible-content-wrapper">
-              <ul class="collapsible-content">
-                <li data-active="false" class="node">
-                  <button id="" class="collapsible-button">Open Child Section 1</button>
-                  <section class="collapsible-content-wrapper">
-                    <ul class="collapsible-content"></ul>
-                  </section>
-                </li>
-              </ul>
-            </section>
-          </li>
-          <li data-active="false" class="node">
-            <button id="" class="collapsible-button">Open Child Section 1</button>
-            <section class="collapsible-content-wrapper">
-              <ul class="collapsible-content">
-                <li data-active="false" class="node">
-                  <button id="" class="collapsible-button">Open Child Section 1</button>
-                  <section class="collapsible-content-wrapper">
-                    <ul class="collapsible-content"></ul>
-                  </section>
-                </li>
-              </ul>
-            </section>
-          </li>
-        </ul>
-      </section>
-    </li>
-  </ul>
+    <ul id="file-system">
+      <li data-active="false" data-is-root="true" id="root" class="node">
+        <button id="root-collapsible" class="collapsible-button">Open Section 1</button>
+        <section class="collapsible-content-wrapper">
+          <ul id="root-content" class="collapsible-content">
+            <li data-active="false" class="node">
+              <button id="" class="collapsible-button">Open Child Section 1</button>
+              <section class="collapsible-content-wrapper">
+                <ul class="collapsible-content">
+                  <li data-active="false" class="node">
+                    <button id="" class="collapsible-button">Open Child Section 1</button>
+                    <section class="collapsible-content-wrapper">
+                      <ul class="collapsible-content"></ul>
+                    </section>
+                  </li>
+                </ul>
+              </section>
+            </li>
+            <li data-active="false" class="node">
+              <button id="" class="collapsible-button">Open Child Section 1</button>
+              <section class="collapsible-content-wrapper">
+                <ul class="collapsible-content">
+                  <li data-active="false" class="node">
+                    <button id="" class="collapsible-button">Open Child Section 1</button>
+                    <section class="collapsible-content-wrapper">
+                      <ul class="collapsible-content"></ul>
+                    </section>
+                  </li>
+                </ul>
+              </section>
+            </li>
+            <li data-active="false" class="node">
+              <button id="" class="collapsible-button">Open Child Section 1</button>
+              <section class="collapsible-content-wrapper">
+                <ul class="collapsible-content">
+                  <li data-active="false" class="node">
+                    <button id="" class="collapsible-button">Open Child Section 1</button>
+                    <section class="collapsible-content-wrapper">
+                      <ul class="collapsible-content"></ul>
+                    </section>
+                  </li>
+                </ul>
+              </section>
+            </li>
+          </ul>
+        </section>
+      </li>
+    </ul>
   </div>
 
   <!-- FRESH NODE TEMPLATE -->
   <template id="fs-node-template">
-    <li 
-    data-active="false" 
-    class="node">
+    <li data-active="false" class="node">
       <button id="" class="collapsible-button">Open Child Section 1</button>
       <section class="collapsible-content-wrapper">
         <ul class="collapsible-content"></ul>
@@ -72,7 +71,8 @@
     </li>
   </template>
 
-  <script src="collapsible.js" type="module" charset="utf-8"></script>
+  <!-- <script src="collapsible.js" type="module" charset="utf-8"></script> -->
+  <script src="/components/CollapsibleNode.component.js" type="module" charset="utf-8"></script>
   <script src="coll-test.js" type="module" charset="utf-8"></script>
 </body>
 

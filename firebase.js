@@ -1,8 +1,6 @@
-// import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js";
-// import { FirebaseApp } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-database.js";
-// import { Firestore ,runTransaction, writeBatch, getFirestore, collection, getDocs, doc, addDoc, Query } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore.js";
-
-// console.log('getFi/restore', Firestore)
+const { Observable, iif, ReplaySubject, AsyncSubject, Subject, interval, of , fromEvent, merge, empty, delay, from } = rxjs;
+const { throttleTime, mergeMap, switchMap, scan, take, takeWhile, map, tap, startWith, filter, mapTo } = rxjs.operators;
+const { fromFetch } = rxjs.fetch;
 
 const firebaseConfig = {
   apiKey: "AIzaSyBVnhy7RGLeKxhzywHJ2e5RV5HjYaQYQhQ",
@@ -13,35 +11,38 @@ const firebaseConfig = {
   appId: "1:3177858927:web:aeb4b8b013b35165564a9a"
 };
 
-// console.log('FirebaseApp.initializeApp()', FirebaseApp.initializeApp())
-
 const app = firebase.initializeApp(firebaseConfig);
-// const app = fsInstance
-console.log('app', app)
 const db = firebase.firestore();
 
-// console.log('firestore.collection',firestore)
-// const {collection,doc,addDoc,getDocs,Query} =db
-// const {
-//   collection,//: (path) => collection(db, path),
-//   doc,
-//   addDoc,
-//   Query,
-//   getDocs,
-//   runTransaction,
-//   writeBatch,
-  
-// } = firestore
-
 export default db
-// const firebase = initializeApp(firebaseConfig);
-// export constdb = getFirestore.getFirestore(firebase); 
-// console.log('firestore', firestore)
 
-// export const firebaseDb = getDatabase(firebase); 
+console.log('db.limit', db.collection)
 
-// {
-//   firebaseConfig,
-//   firebase,
-//   firebaseDb
-// }
+
+
+let observable = Observable.create(observer => db
+  .collection('conversations')
+  .where('members.' + auth.currentUser.uid, '==', true)
+  .onSnapshot(observer)
+);
+
+observable.subscribe({
+  next(value) { console.log('value', value); }
+});
+
+
+
+var docRef = db.collection("files") //.doc("SF");
+
+let bigFiles = []
+db.collection("files").where("size", ">", 1000000000)
+  .get()
+  .then(function(querySnapshot) {
+    querySnapshot.forEach(async function(doc) {
+      // const snap = (await querySnapshot)
+      console.log('snap', doc.data())
+    });
+  })
+  .catch(function(error) {
+    console.log("Error getting documents: ", error);
+  });

@@ -62,8 +62,9 @@ export class FSFolderModel extends FSNodeModel {
 
   insert(node) { // ? SHOULD ID OR NAME BE USED AS KEY HERE?
     if (node === this) throw new Error('Cannot insert folder into itself')
-    // console.log('node', node)
+    console.log('insert(node) in FOLSER',node);
     node.parent = this;
+    console.log('node.parent', node.parent)
     // console.log('node,this', node, this)
     return this.children.set(node.name, node)
   }

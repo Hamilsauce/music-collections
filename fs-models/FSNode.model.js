@@ -1,5 +1,5 @@
 export class FSNodeModel {
-  constructor(model) {
+  constructor(model, parent) {
     // console.log('FSNodeModel', model)
     this._dateAccessed = model.dateAccessed || null;
     this._dateCreated = model.dateCreated || null;
@@ -7,7 +7,7 @@ export class FSNodeModel {
 
     this._name = model.name || 'unnamed file';
 
-    this.parent = model.parent || null;
+    this._parent = parent || null;
     this._id = model.id || null;
     this._index = model.index || null;
     this._nodeType = model.nodeType || null;

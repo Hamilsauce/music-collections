@@ -1,8 +1,8 @@
 import ham from 'https://hamilsauce.github.io/hamhelper/hamhelper1.0.0.js';
 // import homedb from '/data/homedb.mapper.js'
 // import { FileTree } from '/FileTree.js'
-import { FSFileSystemModel } from '/fs-models/index.js'
-import { FSFileSystemComponent } from '/components/FSFileSystem.component.js'
+// import { FSFileSystemModel } from '/fs-models/index.js'
+// import { FSFileSystemComponent } from '/components/FSFileSystem.component.js'
 import store from '/db/store.db.js';
 // import homeDbForkJoin$ from '/data/connectors/homedb-local.connector.js'
 const { iif, BehaviorSubject, ReplaySubject, AsyncSubject, Subject, interval, of , fromEvent, merge, empty, delay, from } = rxjs;
@@ -70,56 +70,9 @@ export class App {
   constructor(store) { //, db) {
     this.store = store;
 
-    this.fs = new FSFileSystemComponent(this.store);
+    // this.fs = new FSFileSystemComponent(this.store);
     const files = this.store.collection('files')
     // console.log('fileSystem', fileSystem.currentFolder.content)
-    // console.log('fileSystem',this.fs)
-    // console.log('this.fs content', [...this.fs.content])
-    // this.fs.createFile('_MY SWEET NEW FILE')
-    // this.fs.createFolder('new folder 1')
-    // this.fs.createFolder('461esyoqeygqy4puk66')
-    // this.fs.openFolder('Sound and Frequency Targeting')
-    // console.log('this.fs.currentFolder', this.fs.currentFolder)
-
-    // setTimeout(() => {
-    //   console.log('opening 461esyoqeygqy4puk66' );
-    // this.fs.openFolder('461esyoqeygqy4puk66')
-    // this.fs.printCurrentFolder()
-    // }, 2500)
-
-    // this.fs.createFolder('new folder 2')
-    // this.fs.openFolder('new folder 2')
-    // this.fs.printCurrentFolder()
-    // this.fs.createFolder('new folder 3')
-    // this.fs.openFolder('new folder 3')
-    // const folder4 = this.fs.createFolder('new folder 4')
-    // this.fs.openFolder('new folder 4')
-    // // console.log('folder4', folder4)
-    // this.fs.createFile('new File 1')
-    // this.fs.createFile('new File 2')
-    // this.fs.createFile('new File 3')
-    // this.fs.createFile('new File 3')
-    // this.fs.createFile('new File 4')
-    // this.fs.createFile('new File 3')
-    // this.fs.createFile('new File 4')
-    // this.fs.createFile('new File 4')
-    // this.fs.createFile('new File 5')
-
-    // console.log('this.fs.goBack() 1');
-    // this.fs.goBack()
-    // console.log('this.fs.currentFolder', this.fs.currentFolder)
-    // console.log('this.fs.goBack() 2');
-    // this.fs.goBack()
-    // console.log('this.fs.goBack() 3');
-    // this.fs.goBack()
-    // console.log('this.fs.goBack() 4');
-    // this.fs.goBack()
-
-    // this.fs.openFolder(folder4.path)
-    // this.fs.goBack()
-
-    // this.fs.printCurrentFolder();
-    // console.log('this.fs.content', this.fs.content)
 
     // this.fileTree = new ,FileTree(fileTreeConfig, db)
     // console.log('this.fileTree', this.fileTree)
