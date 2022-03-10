@@ -16,6 +16,7 @@ const fs = new FSFileSystemComponent()
 console.log('fs', fs)
 
 fs.createFolder('s')
+fs.openFolder('s')
 // fileSystem.innerHTML = ''
 // const fs = {
 //   self: fileSystem,
