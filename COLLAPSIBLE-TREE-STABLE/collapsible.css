@@ -24,7 +24,7 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  align-items:flex-start;
+  align-items: flex-start;
   gap: 0px;
   /* min-width:100vw;min-height:100vh; */
 }
@@ -118,5 +118,9 @@ body {
 }
 
 .node[data-active=false]>.collapsible-content-wrapper {
+  padding: 10px 0 0 10px;
+}
+
+.node[data-has-content=false]>.collapsible-content-wrapper {
   padding: 10px 0 0 10px;
 }

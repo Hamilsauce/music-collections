@@ -34,12 +34,24 @@ const spam = (root, n = 1, trees = [2, 1, 3, 5]) => {
       })
 
       while (depthCount < depth) {
+        // if (Array.isArray(depth)) {
+        //   const depth = sub.createNode({
+        //     name: `Child ${depthCount + 1}`,
+        //     nodeType: 'folder',
+        //     isRoot: false,
+        //     id: `${sub.name} - Child ${depthCount + 1}`,
+        //   })
+
+        // } else {
         const depth = sub.createNode({
           name: `Child ${depthCount + 1}`,
           nodeType: 'folder',
           isRoot: false,
           id: `${sub.name} - Child ${depthCount + 1}`,
         })
+
+        // }
+
         depthCount++;
       }
     });
@@ -51,8 +63,8 @@ const rootNode = new CollapsibleNode({
   id: 'root folder',
   nodeType: 'folder',
   name: 'root',
-  children: new Map(),
-
+  children: [],
+  nodes: [],
 }, null);
 
 fs.self.appendChild(rootNode.self)
